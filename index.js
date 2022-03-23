@@ -5,6 +5,7 @@ const express = require("express");
 const res = require("express/lib/response");
 const { send } = require("express/lib/response");
 const app = express();
+app.use("/places", require("./controllers/places"));
 
 app.get("/", (req, res) => {
     res.send("Hello World!");
