@@ -7,3 +7,48 @@ img {
     width: 40vw;
     height: auto;
 }
+
+.form {
+    margin: 2em;
+}
+
+.form div {
+    margin-bottom: 1em;
+}
+
+nav {
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+body {
+    background-color: lightblue;
+    /*rgba(100, 149, 237, 50%)*/
+    text-align: center;
+}
+
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
