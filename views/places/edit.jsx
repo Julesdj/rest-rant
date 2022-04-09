@@ -1,5 +1,5 @@
 const React = require('react')
-const Def = require('../default.jsx')
+const Def = require('../default')
 
 function edit_form (data) {
     return (
@@ -34,7 +34,7 @@ function edit_form (data) {
                 <label htmlFor="cuisines">Cuisines</label>
                 <input className="form-control" id="cuisines" name="cuisines" value={data.place.cuisines} required />
             </div>
-            <input className="btn btn-primary" type="submit" value="Add Place" />
+            <input className="btn btn-primary" type="submit" value="Edit Place" />
             </form>
           </main>
         </Def>

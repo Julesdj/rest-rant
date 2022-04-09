@@ -17,6 +17,10 @@ function new_form () {
                 <input className="form-control" id="pic" name="pic" />
             </div>
             <div className="form-group">
+                <label htmlFor="cuisines">Cuisines</label>
+                <input className="form-control" id="cuisines" name="cuisines" required />
+            </div>
+            <div className="form-group">
                 <label htmlFor="city">City</label>
                 <input className="form-control" id="city" name="city" />
             </div>
@@ -25,10 +29,10 @@ function new_form () {
                 <input className="form-control" id="state" name="state" />
             </div>
             <div className="form-group">
-                <label htmlFor="cuisines">Cuisines</label>
-                <input className="form-control" id="cuisines" name="cuisines" required />
+                <label htmlfor="founded">Founded Year</label>
+                <input className="form-control" id="founded" name="founded" />
             </div>
-            <input className="btn btn-primary" type="submit" value="Add Place" />
+            <input className="btn btn-primary" type="submit" value="Add A Place" />
             </form>
             
           </main>
