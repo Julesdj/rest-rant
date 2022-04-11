@@ -3,10 +3,9 @@ require("dotenv").config();
 const express = require("express");
 const methodOverride = require("method-override");
 const app = express();
-const { res } = require("express/lib/response");
-const { send } = require("express/lib/response");
 
 //Express settings
+app.use(methodOverride("_method"));
 app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
 app.use((req, res, next) => {
@@ -14,10 +13,9 @@ app.use((req, res, next) => {
     next();
 });
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public"));
 app.use("/places", require("./controllers/places"));
 app.use("/comments", require("./models/comments"));
-app.use(express.static("public"));
-app.use(methodOverride("_method"));
 
 //Controllers routes
 app.get("/", (req, res) => {
