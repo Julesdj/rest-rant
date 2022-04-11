@@ -1,8 +1,8 @@
 // Modules and Globals
 require("dotenv").config();
 const express = require("express");
-const app = express();
 const methodOverride = require("method-override");
+const app = express();
 const { res } = require("express/lib/response");
 const { send } = require("express/lib/response");
 
@@ -15,6 +15,7 @@ app.use((req, res, next) => {
 });
 app.use(express.urlencoded({ extended: true }));
 app.use("/places", require("./controllers/places"));
+app.use("/comments", require("./models/comments"));
 app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
